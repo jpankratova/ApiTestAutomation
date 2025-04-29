@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/user"
+  },
+  "priority": 10,
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "create-user-response.json.hbs",
+    "transformers": ["response-template"]
+  }
+}

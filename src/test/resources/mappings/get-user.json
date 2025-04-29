@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/user/.*"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": "{ \"username\": \"{{request.path.[1]}}\", \"message\": \"User details retrieved\" }",
+    "transformers": ["response-template"]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "errors": [
+    {
+      "code": 8402,
+      "field": "email",
+      "message": "Email field is empty"
+    }
+  ]
+}

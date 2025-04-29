@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/user/unknownuser",
+    "headers": {
+      "Accept-Language": {
+        "contains": "de"
+      }
+    }
+  },
+  "priority": 1,
+  "response": {
+    "status": 404,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": "{ \"errors\": [ { \"code\": 8404, \"message\": \"Benutzer nicht gefunden\" } ] }"
+  }
+}

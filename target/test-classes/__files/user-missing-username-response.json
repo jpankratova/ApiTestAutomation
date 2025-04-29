@@ -1,0 +1,9 @@
+{
+  "errors": [
+    {
+      "code": 8402,
+      "field": "username",
+      "message": "Username field is empty"
+    }
+  ]
+}

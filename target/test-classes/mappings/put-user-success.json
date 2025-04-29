@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "PUT",
+    "urlPattern": "/user/.*"
+  },
+  "priority": 10,
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": "{ \"message\": \"User updated successfully\" }"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "DELETE",
+    "url": "/user/unknownuser"
+  },
+  "priority": 1,
+  "response": {
+    "status": 404,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": "{ \"errors\": [ { \"code\": 8404, \"message\": \"User not found\" } ] }"
+  }
+}

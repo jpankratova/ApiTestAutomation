@@ -1,0 +1,17 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/user",
+    "bodyPatterns": [
+      { "matchesJsonPath": "$[?(@.username == '')]" }
+    ]
+  },
+  "priority": 1,
+  "response": {
+    "status": 400,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "user-missing-username-response.json"
+  }
+}

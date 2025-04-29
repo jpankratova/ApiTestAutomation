@@ -1,0 +1,41 @@
+{
+  "errors": [
+    {{#if (or (eq (jsonPath request.body '$.firstName') "") (not (jsonPath request.body '$.firstName')))}}
+    {
+      "code": 8402,
+      "field": "firstName",
+      "message": "First Name field is empty"
+    }
+    {{else if (or (eq (jsonPath request.body '$.lastName') "") (not (jsonPath request.body '$.lastName')))}}
+    {
+      "code": 8402,
+      "field": "lastName",
+      "message": "Last Name field is empty"
+    }
+    {{else if (or (eq (jsonPath request.body '$.username') "") (not (jsonPath request.body '$.username')))}}
+    {
+      "code": 8402,
+      "field": "username",
+      "message": "Username field is empty"
+    }
+    {{else if (or (eq (jsonPath request.body '$.email') "") (not (jsonPath request.body '$.email')))}}
+    {
+      "code": 8402,
+      "field": "email",
+      "message": "Email field is empty"
+    }
+    {{else if (or (eq (jsonPath request.body '$.password') "") (not (jsonPath request.body '$.password')))}}
+    {
+      "code": 8402,
+      "field": "password",
+      "message": "Password field is empty"
+    }
+    {{else}}
+    {
+      "code": 8402,
+      "field": "root",
+      "message": "Unknown validation error"
+    }
+    {{/if}}
+  ]
+}
