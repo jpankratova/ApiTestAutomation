@@ -85,7 +85,12 @@ You can run a specific feature (e.g., only user tests):
 ```bash
 mvn clean test -Dcucumber.features=src/test/resources/features/user.feature
 ```
+### 5. View Cucumber Report
 
+After test execution, open the following HTML report in your browser:
+```
+mocked-api-crud-tests/target/cucumber-report.html
+```
 ---
 
 ## Available API Endpoints (Mocked by WireMock)
